@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    font-family: "Raleway", "微软雅黑", sans-serif;
+}
+body ::-webkit-input-placeholder {
+ font-family: "Raleway", "微软雅黑", sans-serif;
+ color: white;
+ font-weight: lighter;
+}
+#left {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    flex: none;
+    width: 300px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#leftTop {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    box-shadow: 5px 8px 20px 3px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center center;
+}
+#profileName {
+    margin: 25px 0 0;
+    font-size: 2em;
+}
+.info {
+    width: 260px;
+    margin: 25px;
+    padding: 0 15px;
+    font-size: 1.5em;
+}
+#left p {
+    margin: 15px 0;
+}
+.formVal {
+    text-align: right;
+    color: rgb(220, 43, 33);
+}
+#right {
+    border: 10px solid white;
+    border-radius: 20px;
+    margin: 10px;
+    flex: 1 0 auto;
+    width: 0px;
+    background-color: rgb(252, 230, 173);
+    overflow: auto;
+}
+#right::-webkit-scrollbar {
+ width:0px;
+}
+#rightTop {
+    text-align: center;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.pointer:hover {
+    cursor: pointer;
+}
+#rightBtm {
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

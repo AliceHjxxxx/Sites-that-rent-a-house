@@ -1,0 +1,67 @@
+#right {
+    min-width: 400px;
+}
+#rightTop {
+    justify-content: center;
+}
+#rightTop input {
+    width: 60%;
+    min-width: 200px;
+    max-width: 500px;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 50px 5px 0 25px;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    transition-duration: 0.25s;
+}
+#rightTop input:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+}
+#rightTop input:focus {
+    background-color: white;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+    color: #53e3a6;
+}
+#searchBtn {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 50px 25px 0 5px;
+    transition-duration: 0.25s;
+}
+#searchBtn:hover {
+    color: rgba(0, 0, 0, 0.75);
+}
+.apartment {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 300px;
+    margin: 15px;
+}
+.pic {
+    margin: 20px 0; 
+    width: 280px;
+    height: 210px;
+    border-radius: 30px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+}
+.selling {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 2.5em;
+    color: rgb(220, 43, 33);
+    font-weight: bolder;
+}

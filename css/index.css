@@ -1,0 +1,277 @@
+#bg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: inherit;
+    filter: blur(3px);
+    z-index: 0;
+}
+#cell {
+    flex-grow: 4;
+}
+#welcome {
+    z-index: 1;
+    min-width: 400px;
+    height: auto;
+    text-align: center;
+    flex-grow: 2;
+}
+.words {
+    font-family: "Raleway", "微软雅黑", sans-serif;
+}
+#title {
+    font-size: 2.5em;
+    line-height: 250%;
+    color: antiquewhite;
+}
+#title>span {
+    color: darkorange;
+    font-size: 1.5em;
+}
+#explain {
+    font-size: 1.2em;
+    line-height: 125%;
+    color: antiquewhite;
+}
+#getIn {
+    flex-grow: 4;
+    z-index: 1;
+}
+#getIn>p {
+    text-align: center;
+    font-size: 1.5em;
+    user-select: none;
+    cursor: default;
+}
+#getIn span {
+    opacity: 0.5;
+    margin: 10px 20px;
+    padding: 5px 20px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    box-shadow: 0px 0px 3px 3px rgba(204, 204, 206, 0.5);
+    cursor: pointer;
+}
+#getIn span:hover {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    opacity: 0.75;
+}
+#getIn span:active {
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.8) inset;
+}
+#blackOverlay {
+    display: none;
+    /*display: flex;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#loginTab {
+    display: none;
+    /*    display: block;*/
+    position: relative;
+    border: 10px solid white;
+    width: 300px;
+    padding: 30px 15px;
+    border-radius: 20px;
+    background-color: #53e3a6;
+    animation: all 1s;
+    animation-timing-function: ease-in-out;
+}
+#registerTab {
+    display: none;
+    /*display: block;*/
+    position: relative;
+    border: 10px solid white;
+    overflow: auto;
+    width: 300px;
+    max-height: 400px;
+    padding: 30px 15px;
+    border-radius: 20px;
+    background-color: #53e3a6;
+    animation: all 1s;
+    animation-timing-function: ease-in-out;
+}
+#registerTab::-webkit-scrollbar {
+ width:0px;
+}
+#cancelBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: lightcoral;
+}
+#cancelBtn:hover {
+    cursor: pointer;
+}
+#cancelBtn2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: lightcoral;
+}
+#cancelBtn2:hover {
+    cursor: pointer;
+}
+#blackOverlay h3 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 10px;
+}
+form {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form .text {
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    transition-duration: 0.25s;
+}
+body ::-webkit-input-placeholder {
+ font-family: "Raleway", "微软雅黑", sans-serif;
+ color: white;
+ font-weight: lighter;
+}
+form .text:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+form .text:focus {
+    background-color: white;
+    width: 225px;
+    color: #53e3a6;
+}
+form p {
+    color: white;
+    appearance: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 10px;
+}
+form p:hover {
+    cursor: pointer;
+}
+#birth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.date {
+    appearance: none;
+    outline: 0;
+    width: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 10px 0px;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+    transition-duration: 0.25s;
+}
+.date:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.date:focus {
+    background-color: white;
+    width: 75px;
+    color: #53e3a6;
+}
+#birth h5 {
+    width: 300px;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    font-weight: bolder;
+}
+form input[type="radio"] {
+    display: none;
+}
+.radioInput {
+    margin: 0px 10px;
+    background-color: #fff;
+    border: 2px solid #53e3a6;
+    border-radius: 50%;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    width: 20px;
+    position: relative;
+}
+.radio[checked="checked"] + .radioInput:after {
+    background-color: #53e3a6;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.radio:checked + .radioInput {
+    border: 2px solid #53e3a6;
+}
+form button {
+    appearance: none;
+    outline: 0;
+    background-color: white;
+    border: 0;
+    margin: 10px;
+    padding: 10px 15px;
+    color: #53e3a6;
+    border-radius: 5px;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bolder;
+    transition-duration: 0.25s;
+}
+form button:hover {
+    background-color: #f5f7f9;
+}

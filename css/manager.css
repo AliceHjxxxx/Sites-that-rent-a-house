@@ -1,0 +1,49 @@
+#right {
+    min-width: 950px;
+}
+#rightTop {
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.5em;
+}
+#userTab, #apartmentTab, #apartmentInsertTab
+{
+    padding: 15px;
+    font-size: 1.25em;
+}
+#apartmentTab 
+{
+    display: none;
+}
+#apartmentInsertTab
+{
+	 display: none;
+}
+table th, table td {
+    border: 1px solid green;
+    padding: 10px;
+    text-align: center;
+}
+.three
+{
+    border-radius: 50px;
+    border: 0;
+    height: 30px;
+}
+.one
+{
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+
+}
+.h
+{
+	padding-top:20px;
+}
